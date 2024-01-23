@@ -35,6 +35,15 @@
         .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
+
+        .radial-progress {
+            position: relative;
+            transform: rotate(-210deg);
+        }
+
+        .progress-container {
+            transform: rotate(210deg);
+        }
     </style>
 </head>
 
@@ -83,30 +92,152 @@
         </nav>
         <!-- carousel -->
         <section class="relative mx-3">
-            <div class="carousel w-full mt-10 rounded-3xl">
+            <div class="carousel w-full mt-10 rounded-3xl h-[200px] lg:h-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                    <img src="Images/banner-1.png" class="w-full h-[80%] lg:h-[700px]" />
-                    <div class="absolute flex justify-start gap-4 transform -translate-y-1/2 left-2 lg:left-12 bottom-20  lg:bottom-8">
+                    <img src="Images/banner-1.png" class="w-full lg:h-[700px]" />
+                    <div
+                        class="absolute flex justify-start gap-4 transform -translate-y-1/2 left-0 lg:left-12 top-[80%] lg:bottom-8">
                         <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a>
                         <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
-                    <img src="Images/banner-2.jpg" class="w-full h-[400px] lg:h-[700px]" />
-                    <div class="absolute flex justify-start gap-4 transform -translate-y-1/2 left-2 lg:left-12 bottom-20  lg:bottom-8">
+                    <img src="Images/banner-2.png" class="w-full lg:h-[700px]" />
+                    <div
+                        class="absolute flex justify-start gap-4 transform -translate-y-1/2 left-0 lg:left-12 top-[80%] lg:bottom-8">
                         <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
                         <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
                     </div>
                 </div>
-            </div>
-            <div class="bg-black text-white lg:w-[500px] p-7 -mt-10 rounded-2xl lg:absolute lg:bottom-10 lg:right-10">
-                <h4 class="text-2xl font-extrabold">Meet all the heroes from the field</h4>
-                <p class="text-[#ffffff99] font-medium">Hockey is the national game of India. Also, it is a popular game and an interesting game that many countries play. The game has many rules that need to be followed by each team so that a fair play can be conducted. There are different varieties of this game played acr</p>
-            </div>
 
+            </div>
+            <div class="bg-black text-white lg:w-[500px] p-7 mt-4 rounded-2xl lg:absolute lg:bottom-10 lg:right-10">
+                <h4 class="text-2xl font-extrabold">Meet all the heroes from the field</h4>
+                <p class="text-[#ffffff99] font-medium">Hockey is the national game of India. Also, it is a popular game
+                    and an interesting game that many countries play. The game has many rules that need to be followed
+                    by each team so that a fair play can be conducted. There are different varieties of this game played
+                    acr</p>
+            </div>
         </section>
     </header>
-    <main>
+    <main class="mx-auto  md:mx-10 lg:mx-28 lg:mt-14">
+        <!-- Professional Hockey Club Section -->
+        <section class="flex flex-col justify-center mt-4 lg:mt-24 text-center items-center">
+            <div
+                class="text-center py-8 my-4 lg:my-20 space-y-6 mx-auto px-3 lg:px-[20%] border-dashed border-y-2 border-slate-200 ">
+                <h3 class="text-2xl lg:text-4xl font-extrabold">Professional Hockeys Club</h3>
+                <p class="text-[#13131899] font-medium">Founded in 2016, the Worcester Railers Hockey Club is the proud
+                    ECHL affiliate of the New York Islanders (NHL). With a community first approach, the Worcester
+                    Railers HC was recognized by the ECHL by receiving the league-wide Community Service Award in
+                    2018-19, 2019-20, and 2020-21. The Railers aim to provide affordable family fun in downtown
+                    Worcester.</p>
+            </div>
+            <!-- radial progress bar -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10 w-[80%] text-center">
+                <!-- progress-1 -->
+                <div class="text-center space-y-4">
+                    <div class="radial-progress  text-red-400" style="--value:85;" role="progressbar">
+                        <div class="progress-container">
+                            <div class="progress-text font-extrabold text-xl text-black p-10">85%</div>
+                        </div>
+                    </div>
+                    <h5 class="text-xl font-semibold">Prayer Facility</h5>
+                    <p class="text-[#13131899] font-normal">Highly facilitated prayer room</p>
+                </div>
+                <!-- progress-2 -->
+                <div class="text-center space-y-4">
+                    <div class="radial-progress  text-green-400" style="--value:92;" role="progressbar">
+                        <div class="progress-container">
+                            <div class="progress-text font-extrabold text-xl text-black p-10">92%</div>
+                        </div>
+                    </div>
+                    <h5 class="text-xl font-semibold">Experienced Coach</h5>
+                    <p class="text-[#13131899] font-normal">The coach is heavily experienced</p>
+                </div>
+                <!-- progress-3 -->
+                <div class="text-center space-y-4">
+                    <div class="radial-progress  text-yellow-400" style="--value:90;" role="progressbar">
+                        <div class="progress-container">
+                            <div class="progress-text font-extrabold text-xl text-black p-10">90%</div>
+                        </div>
+                    </div>
+                    <h5 class="text-xl font-semibold">Senior Player</h5>
+                    <p class="text-[#13131899] font-normal">Lots of senior players are here</p>
+                </div>
+                <!-- progress-4 -->
+                <div class="text-center space-y-4">
+                    <div class="radial-progress text-blue-400" style="--value:80;" role="progressbar">
+                        <div class="progress-container">
+                            <div class="progress-text font-extrabold text-xl text-black p-10">80%</div>
+                        </div>
+                    </div>
+                    <h5 class="text-xl font-semibold">Training Ground</h5>
+                    <p class="text-[#13131899] font-normal">Training ground is also highly facilitated</p>
+                </div>
+            </div>
+        </section>
+        <!-- Program Section -->
+        <section class="mx-10 flex flex-col justify-center">
+            <div
+                class="text-center py-8 my-4 lg:my-20 space-y-6 mx-auto px-3 lg:px-[20%] border-dashed border-y-2 border-slate-200 ">
+                <h3 class="text-2xl lg:text-4xl font-extrabold">Program Sections</h3>
+                <p class="text-[#13131899] font-medium">Men's Hockey World Cup was the 14th edition of the Hockey World
+                    Cup, the quadrennial world championship for men's national field hockey teams organized by the FIH.
+                    It was held from 28 November to 16 December 2018, at the Kalinga Stadium in Bhubaneswar, India.</p>
+            </div>
+            <!-- card container -->
+            <div class=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 justify-center">
+                <!-- 1st card -->
+                <div class="card lg:w-full bg-base-100 shadow-xl image-full rounded-xl">
+                    <figure><img class="w-full" src="Images/program-1.png" alt="" /></figure>
+                    <div class="card-body pt-[30%]">
+                        <h2 class="card-title text-xl lg:text-2xl text-white font-extrabold">Junior Program</h2>
+                        <p class="font-medium text-white mb-5">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                            Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <div class="card-actions justify-start">
+                            <button class="btn bg-[#FF4240] text-xl font-bold border-none text-white">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd Card -->
+                <div class="card lg:w-full bg-base-100 shadow-xl image-full rounded-xl">
+                    <figure><img class="w-full" src="Images/program-2.png" alt="" /></figure>
+                    <div class="card-body pt-[30%]">
+                        <h2 class="card-title text-xl lg:text-2xl text-white font-extrabold">Junior Program</h2>
+                        <p class="font-medium text-white mb-5">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                            Elit
+                            elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <div class="card-actions justify-start">
+                            <button class="btn bg-[#FF4240] text-xl font-bold border-none text-white">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd Card -->
+                <div class="card lg:col-span-2 lg:w-full  bg-base-100 shadow-xl image-full rounded-xl">
+                    <figure><img class="w-full " src="Images/program-3.png" alt="" /></figure>
+                    <div class="card-body pt-[30%]">
+                        <h2 class="card-title  text-xl lg:text-2xl text-white font-extrabold">Junior Program</h2>
+                        <p class="font-medium text-white mb-5 lg:mr-[60%]">Dolor sit amet consectetur. Ut urna diam quis
+                            sagittis. Elit
+                            elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <div class="card-actions justify-start">
+                            <button class="btn bg-[#FF4240] text-xl font-bold border-none text-white">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
 
     </main>
     <footer>
