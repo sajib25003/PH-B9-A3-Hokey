@@ -188,8 +188,8 @@
             <!-- card container -->
             <div class=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 justify-center">
                 <!-- 1st card -->
-                <div class="card lg:w-full bg-base-100 shadow-xl image-full rounded-xl">
-                    <figure><img class="w-full" src="Images/program-1.png" alt="" /></figure>
+                <div class="card lg:w-full  shadow-xl image-full rounded-xl">
+                    <figure><img class="w-full z-10 brightness-50" src="Images/program-1.png" alt="" /></figure>
                     <div class="card-body pt-[30%]">
                         <h2 class="card-title text-xl lg:text-2xl text-white font-extrabold">Junior Program</h2>
                         <p class="font-medium text-white mb-5">Junior Section is for the players aged below 17 years. We
@@ -201,8 +201,8 @@
                     </div>
                 </div>
                 <!-- 2nd Card -->
-                <div class="card lg:w-full bg-base-100 shadow-xl image-full rounded-xl">
-                    <figure><img class="w-full" src="Images/program-2.png" alt="" /></figure>
+                <div class="card lg:w-full shadow-xl image-full rounded-xl">
+                    <figure><img class="w-full z-10 brightness-50" src="Images/program-2.png" alt="" /></figure>
                     <div class="card-body pt-[30%]">
                         <h2 class="card-title text-xl lg:text-2xl text-white font-extrabold">Teenager Program</h2>
                         <p class="font-medium text-white mb-5">Our second category is the Teenager program. This
@@ -214,8 +214,8 @@
                     </div>
                 </div>
                 <!-- 3rd Card -->
-                <div class="card lg:col-span-2 lg:w-full  bg-base-100 shadow-xl image-full rounded-xl">
-                    <figure><img class="w-full " src="Images/program-3.png" alt="" /></figure>
+                <div class="card lg:col-span-2 lg:w-full   shadow-xl image-full rounded-xl">
+                    <figure><img class="w-full  z-10 brightness-50 " src="Images/program-3.png" alt="" /></figure>
                     <div class="card-body pt-[30%]">
                         <h2 class="card-title  text-xl lg:text-2xl text-white font-extrabold">Professional Program</h2>
                         <p class="font-medium text-white mb-5 lg:mr-[60%]">Our main program is the professional program.
@@ -452,7 +452,7 @@
                     </div>
                     <!-- Question-2 -->
                     <div class="collapse collapse-plus border-b-2 border-slate-200 rounded-none space-y-2">
-                        <input type="radio" name="my-accordion-3"  />
+                        <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium text-xl font-bold">
                             Hockey Training
                         </div>
@@ -494,7 +494,7 @@
 
                     <!-- Question-5 -->
                     <div class="collapse collapse-plus border-b-2 border-slate-200 rounded-none space-y-2">
-                        <input type="radio" name="my-accordion-3"  />
+                        <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium text-xl font-bold">
                             Booking & Pricing
                         </div>
@@ -510,11 +510,129 @@
 
                 </div>
             </div>
+        </section>
+        <!-- Get In Touch Section -->
+        <section>
+            <div
+                class="text-center py-8 my-4 lg:my-20 space-y-6 mx-auto px-3 lg:px-[20%] border-dashed border-y-2 border-slate-200 ">
+                <h3 class="text-2xl lg:text-4xl font-extrabold">Get In Touch</h3>
+                <p class="text-[#13131899] font-medium">We are regularly updating ourselves. To know every knews from us
+                    regulary, you can fill up the form and subscribe to our newsletter. </p>
+            </div>
+            <!-- contact container -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mx-5">
+                <!-- left part -->
+                <div class="border-2 rounded-xl border-slate-200 p-8 space-y-6">
+                    <div class="grid grid-cols-1 p-8 bg-green-100 rounded-xl gap-2">
+                        <img src="Images/phone.png" alt="">
+                        <p class="text-[#13131899] font-normal">Phone Number:</p>
+                        <p class="text-lg font-extrabold text-black">+8801234-456789</p>
+                    </div>
+                    <div class="grid grid-cols-1 p-8 bg-orange-100 rounded-xl gap-2">
+                        <img src="Images/mail.png" alt="">
+                        <p class="text-[#13131899]  font-normal">Email:</p>
+                        <p class="text-lg font-extrabold text-black">hockey@email.com</p>
+                    </div>
+                    <div class="grid grid-cols-1 p-8 bg-blue-100 rounded-xl gap-2">
+                        <img src="Images/map.png" alt="">
+                        <p class="text-[#13131899]  font-normal">Location:</p>
+                        <p class="text-lg font-extrabold text-black">132/33, R-12, Ave-7, Mohakhali C/A, Dhaka</p>
+                    </div>
+                </div>
+                <!-- right form part -->
+                <div class="lg:col-span-2">
+                    <form class="space-y-3 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="space-y-3">
+                            <h4 class="text-xl font-bold">Your Name</h4>
+                            <input class="bg-slate-100 rounded-xl p-5 w-full" placeholder="Enter your full name"
+                                type="text" name="" id="">
+                        </div>
 
+                        <div class="space-y-3">
+                            <h4 class="text-xl font-bold">Your Email</h4>
+                            <input class="bg-slate-100 rounded-xl p-5 w-full" placeholder="Enter your email" type="text"
+                                name="" id="">
+                        </div>
+
+                        <div class="space-y-3">
+                            <h4 class="text-xl font-bold">Subject</h4>
+                            <input class="bg-slate-100 rounded-xl p-5 w-full" placeholder="Enter your subject"
+                                type="text" name="" id="">
+                        </div>
+
+                        <div class="space-y-3">
+                            <h4 class="text-xl font-bold">Phone Number</h4>
+                            <input class="bg-slate-100 rounded-xl p-5 w-full" placeholder="Enter your phone number"
+                                type="text" name="" id="">
+                        </div>
+
+                        <div class="space-y-3 lg:col-span-2">
+                            <h4 class="text-xl font-bold">Message</h4>
+                            <textarea class="bg-slate-100 rounded-xl p-5 w-full" placeholder="Write your message"
+                                name="" id="" cols="30" rows="8"></textarea>
+                        </div>
+
+                        <div class="card-actions lg:col-span-2">
+                            <button
+                                class="btn bg-[#FF4240] text-xl font-bold border-none text-white w-full h-full p-4 ">Send
+                                Message</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!-- social media section -->
+            <div class="bg-[#13131805] rounded-xl mx-5 mt-10 mb-24 text-center py-9 space-y-5">
+                <h4 class="text-black text-2xl font-extrabold">Social Media</h4>
+                <div class="flex gap-10 justify-center">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
         </section>
 
     </main>
-    <footer>
+    <footer class="text-center lg:text-left p-8 lg:p-14 bg-black grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 lg:px-24">
+        <div class="col-span-2 md:col-span-3 lg:col-span-2 space-y-4">
+            <h4 class="text-white text-2xl font-extrabold">Get In Touch</h4>
+            <p class="text-gray-400 font-medium pr-10">You can always be with us. Follow us in social medias. Subscribe
+                to our
+                newsletter.</p>
+            <div class="flex justify-center lg:justify-start gap-3 items-center">
+                <i class="fa-regular fa-envelope" style="color: red;"></i>
+                <a class="text-gray-400 font-medium" href="">hockeys@email.com</a>
+            </div>
+            <div class="flex justify-center lg:justify-start gap-3 items-center">
+                <i class="fa-solid fa-phone" style="color: red;"></i>
+                <a class="text-gray-400 font-medium" href="">+8801234-456789</a>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 gap-2">
+            <h4 class="text-white text-lg font-bold pb-4">Company</h4>
+            <a class="text-gray-400 font-medium" href="">About Us</a>
+            <a class="text-gray-400 font-medium" href="">Leadership</a>
+            <a class="text-gray-400 font-medium" href="">Careers</a>
+            <a class="text-gray-400 font-medium" href="">News & Article</a>
+            <a class="text-gray-400 font-medium" href="">Legal Notice</a>
+        </div>
+        <div class="grid grid-cols-1 gap-2">
+            <h4 class="text-white text-lg font-bold pb-4">Support</h4>
+            <a class="text-gray-400 font-medium" href="">Help Center</a>
+            <a class="text-gray-400 font-medium" href="">FAQ</a>
+            <a class="text-gray-400 font-medium" href="">Ticket Support</a>
+            <a class="text-gray-400 font-medium" href="">Contact Us</a>
+        </div>
+        <div class="grid col-span-2 md:col-span-1 grid-cols-1 gap-2">
+            <h4 class="text-white text-lg font-bold pb-4">Services</h4>
+            <a class="text-gray-400 font-medium" href="">Academy</a>
+            <a class="text-gray-400 font-medium" href="">Group Lesson</a>
+            <a class="text-gray-400 font-medium" href="">Private Lesson</a>
+            <a class="text-gray-400 font-medium" href="">Hockeys for Kids</a>
+            <a class="text-gray-400 font-medium" href="">Hockeys for Adults</a>
+        </div>
+
 
     </footer>
 </body>
